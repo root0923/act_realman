@@ -1,0 +1,88 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.10.18
+        t:
+            "1":
+                - 1
+                - 41
+                - 49
+                - 83
+            "2":
+                - 1
+                - 41
+                - 49
+                - 83
+            "3":
+                - 2
+                - 13
+                - 55
+                - 61
+            "4": 3.10.18
+            "5": 0.20.1
+            "10":
+                - 20
+            "12": 0.20.1
+            "13": linux-x86_64
+actuator_config:
+    value:
+        actuator_network_dir: null
+        future_len: null
+        history_len: null
+        prediction_len: null
+camera_names:
+    value:
+        - cam01
+        - cam02
+ckpt_dir:
+    value: ckpt//
+episode_len:
+    value: 500
+eval_every:
+    value: 500
+load_pretrain:
+    value: false
+lr:
+    value: 1e-05
+num_steps:
+    value: 20000
+onscreen_render:
+    value: false
+policy_class:
+    value: ACT
+policy_config:
+    value:
+        action_dim: 12
+        backbone: resnet18
+        camera_names:
+            - cam01
+            - cam02
+        dec_layers: 7
+        dim_feedforward: 3200
+        enc_layers: 4
+        hidden_dim: 512
+        kl_weight: 10
+        lr: 1e-05
+        lr_backbone: 1e-05
+        nheads: 8
+        no_encoder: false
+        num_queries: 50
+        state_dim: 12
+        vq: false
+        vq_class: null
+        vq_dim: null
+real_robot:
+    value: true
+resume_ckpt_path:
+    value: null
+save_every:
+    value: 500
+seed:
+    value: 0
+task_name:
+    value: real_test01
+temporal_agg:
+    value: false
+validate_every:
+    value: 500

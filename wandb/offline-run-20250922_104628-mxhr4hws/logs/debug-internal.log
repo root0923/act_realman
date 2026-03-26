@@ -1,0 +1,12 @@
+{"time":"2025-09-22T10:46:28.39924692+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.4"}
+{"time":"2025-09-22T10:46:28.502783972+08:00","level":"WARN","msg":"featurechecker: GraphQL client is nil, skipping feature loading"}
+{"time":"2025-09-22T10:46:28.502931263+08:00","level":"INFO","msg":"stream: created new stream","id":"mxhr4hws"}
+{"time":"2025-09-22T10:46:28.502955047+08:00","level":"INFO","msg":"stream: started","id":"mxhr4hws"}
+{"time":"2025-09-22T10:46:28.503054324+08:00","level":"INFO","msg":"writer: started","stream_id":"mxhr4hws"}
+{"time":"2025-09-22T10:46:28.503114344+08:00","level":"INFO","msg":"handler: started","stream_id":"mxhr4hws"}
+{"time":"2025-09-22T10:46:28.503149954+08:00","level":"INFO","msg":"sender: started","stream_id":"mxhr4hws"}
+{"time":"2025-09-22T10:46:28.504141399+08:00","level":"WARN","msg":"runupserter: server does not expand metric globs but the x_server_side_expand_glob_metrics setting is set; ignoring"}
+{"time":"2025-09-22T10:46:28.718192715+08:00","level":"INFO","msg":"stream: closing","id":"mxhr4hws"}
+{"time":"2025-09-22T10:46:28.718298698+08:00","level":"INFO","msg":"handler: closed","stream_id":"mxhr4hws"}
+{"time":"2025-09-22T10:46:28.718333301+08:00","level":"INFO","msg":"sender: closed","stream_id":"mxhr4hws"}
+{"time":"2025-09-22T10:46:28.718340596+08:00","level":"INFO","msg":"stream: closed","id":"mxhr4hws"}

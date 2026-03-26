@@ -1,0 +1,29 @@
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_setup.py:_flush():81] Configure stats pid to 20268
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_setup.py:_flush():81] Loading settings from /home/shuxiangzhang/.config/wandb/settings
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_setup.py:_flush():81] Loading settings from /home/shuxiangzhang/act-yang/wandb/settings
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/shuxiangzhang/act-yang/wandb/run-20250627_142034-gqtz7tsb/logs/debug.log
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/shuxiangzhang/act-yang/wandb/run-20250627_142034-gqtz7tsb/logs/debug-internal.log
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_init.py:init():831] calling init triggers
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-06-27 14:20:34,579 INFO    MainThread:20268 [wandb_init.py:init():872] starting backend
+2025-06-27 14:20:34,787 INFO    MainThread:20268 [wandb_init.py:init():875] sending inform_init request
+2025-06-27 14:20:34,790 INFO    MainThread:20268 [wandb_init.py:init():883] backend started and connected
+2025-06-27 14:20:34,791 INFO    MainThread:20268 [wandb_init.py:init():956] updated telemetry
+2025-06-27 14:20:34,794 INFO    MainThread:20268 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-06-27 14:20:35,622 INFO    MainThread:20268 [wandb_init.py:init():1032] starting run threads in backend
+2025-06-27 14:20:35,692 INFO    MainThread:20268 [wandb_run.py:_console_start():2453] atexit reg
+2025-06-27 14:20:35,692 INFO    MainThread:20268 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-06-27 14:20:35,692 INFO    MainThread:20268 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-06-27 14:20:35,693 INFO    MainThread:20268 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-06-27 14:20:35,693 INFO    MainThread:20268 [wandb_init.py:init():1078] run started, returning control to user process
+2025-06-27 14:20:35,693 INFO    MainThread:20268 [wandb_run.py:_config_callback():1358] config_cb None None {'num_steps': 10000, 'eval_every': 500, 'validate_every': 500, 'save_every': 500, 'ckpt_dir': 'ckpt//', 'resume_ckpt_path': None, 'episode_len': 500, 'lr': 1e-05, 'policy_class': 'ACT', 'onscreen_render': False, 'policy_config': {'lr': 1e-05, 'num_queries': 50, 'kl_weight': 10, 'hidden_dim': 512, 'dim_feedforward': 3200, 'lr_backbone': 1e-05, 'backbone': 'resnet18', 'enc_layers': 4, 'dec_layers': 7, 'nheads': 8, 'camera_names': ['cam01', 'cam02'], 'vq': False, 'vq_class': None, 'vq_dim': None, 'state_dim': 12, 'action_dim': 12, 'no_encoder': False}, 'task_name': 'real_test01', 'seed': 0, 'temporal_agg': False, 'camera_names': ['cam01', 'cam02'], 'real_robot': True, 'load_pretrain': False, 'actuator_config': {'actuator_network_dir': None, 'history_len': None, 'future_len': None, 'prediction_len': None}}
+2025-06-27 15:42:17,628 INFO    MainThread:20268 [wandb_run.py:_finish():2219] finishing run 2667144061-south-china-university-of-technology/123/gqtz7tsb
+2025-06-27 15:42:17,632 INFO    MainThread:20268 [wandb_run.py:_atexit_cleanup():2418] got exitcode: 0
+2025-06-27 15:42:17,634 INFO    MainThread:20268 [wandb_run.py:_restore():2400] restore
+2025-06-27 15:42:17,634 INFO    MainThread:20268 [wandb_run.py:_restore():2406] restore done
+2025-06-27 15:42:19,664 INFO    MainThread:20268 [wandb_run.py:_footer_history_summary_info():4000] rendering history
+2025-06-27 15:42:19,666 INFO    MainThread:20268 [wandb_run.py:_footer_history_summary_info():4032] rendering summary
+2025-06-27 15:42:19,670 INFO    MainThread:20268 [wandb_run.py:_footer_sync_info():3961] logging synced files

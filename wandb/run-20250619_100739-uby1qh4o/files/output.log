@@ -1,0 +1,137 @@
+Found 3 hdf5 files
+
+
+Data from: ['/home/shuxiangzhang/act-yang/data/real_test01']
+- Train on [2] episodes
+- Test on [1] episodes
+
+
+Found 3 hdf5 files
+Norm stats from: ['/home/shuxiangzhang/act-yang/data/real_test01']
+Initializing transformations
+Initializing transformations
+Augment images: False, train_num_workers: 16, val_num_workers: 8
+======================
+Namespace(action_dim=8, actuator_network_dir=None, backbone='resnet18', batch_size=4, camera_names=['cam01', 'cam02'], chunk_size=100, ckpt_dir='ckpt//', clip_max_norm=0.1, dec_layers=7, dilation=False, dim_feedforward=3200, dropout=0.1, enc_layers=4, epochs=300, eval=False, eval_every=500, future_len=None, hidden_dim=512, history_len=None, kl_weight=10, load_pretrain=False, lr=1e-05, lr_backbone=1e-05, lr_drop=200, masks=False, nheads=8, no_encoder=False, num_queries=100, num_steps=20000, onscreen_render=False, policy_class='ACT', position_embedding='sine', pre_norm=False, prediction_len=None, resume_ckpt_path=None, save_every=500, seed=0, skip_mirrored_data=False, state_dim=8, task_name='real_test01', temporal_agg=False, use_vq=False, validate_every=500, vq=False, vq_class=None, vq_dim=None, weight_decay=0.0001)
+/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Use VQ: False, None, None
+number of parameters: 95.08M
+KL Weight 10
+  0%|                                                 | 0/20001 [00:00<?, ?it/s]
+validating
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+hhhhhhh 8 8
+Val loss:   96.47383
+val_l1: 0.343 val_kl: 9.613 val_loss: 96.474
+Traceback (most recent call last):
+  File "imitate_episodes.py", line 701, in <module>
+    main(vars(parser.parse_args()))
+  File "imitate_episodes.py", line 206, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "imitate_episodes.py", line 636, in train_bc
+    data = next(train_dataloader)
+  File "imitate_episodes.py", line 661, in repeater
+    for data in loader:
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/queue.py", line 179, in get
+    self.not_empty.wait(remaining)
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "imitate_episodes.py", line 701, in <module>
+    main(vars(parser.parse_args()))
+  File "imitate_episodes.py", line 206, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "imitate_episodes.py", line 636, in train_bc
+    data = next(train_dataloader)
+  File "imitate_episodes.py", line 661, in repeater
+    for data in loader:
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/queue.py", line 179, in get
+    self.not_empty.wait(remaining)
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/threading.py", line 1011, in join
+    self._wait_for_tstate_lock()
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+  File "/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 12807) exited unexpectedly with exit code 1. Details are lost due to multiprocessing. Rerunning with num_workers=0 may give better error trace.

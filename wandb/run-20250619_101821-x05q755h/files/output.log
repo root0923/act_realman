@@ -1,0 +1,59 @@
+Found 3 hdf5 files
+
+
+Data from: ['/home/shuxiangzhang/act-yang/data/real_test01']
+- Train on [2] episodes
+- Test on [1] episodes
+
+
+Found 3 hdf5 files
+Norm stats from: ['/home/shuxiangzhang/act-yang/data/real_test01']
+Initializing transformations
+Initializing transformations
+Augment images: False, train_num_workers: 16, val_num_workers: 8
+======================
+Namespace(action_dim=8, actuator_network_dir=None, backbone='resnet18', batch_size=4, camera_names=['cam01', 'cam02'], chunk_size=100, ckpt_dir='ckpt//', clip_max_norm=0.1, dec_layers=7, dilation=False, dim_feedforward=3200, dropout=0.1, enc_layers=4, epochs=300, eval=False, eval_every=500, future_len=None, hidden_dim=512, history_len=None, kl_weight=10, load_pretrain=False, lr=1e-05, lr_backbone=1e-05, lr_drop=200, masks=False, nheads=8, no_encoder=False, num_queries=100, num_steps=5000, onscreen_render=False, policy_class='ACT', position_embedding='sine', pre_norm=False, prediction_len=None, resume_ckpt_path=None, save_every=500, seed=0, skip_mirrored_data=False, state_dim=8, task_name='real_test01', temporal_agg=False, use_vq=False, validate_every=500, vq=False, vq_class=None, vq_dim=None, weight_decay=0.0001)
+/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/shuxiangzhang/anaconda3/envs/aloha/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Use VQ: False, None, None
+number of parameters: 95.08M
+KL Weight 10
+100%|██████████████████████████████████████▉| 5000/5001 [26:06<00:00,  3.38it/s]
+validating
+Val loss:   96.47383
+val_l1: 0.343 val_kl: 9.613 val_loss: 96.474
+validating
+Val loss:   0.59015
+val_l1: 0.193 val_kl: 0.040 val_loss: 0.590
+validating
+Val loss:   0.48118
+val_l1: 0.205 val_kl: 0.028 val_loss: 0.481
+validating
+Val loss:   0.53510
+val_l1: 0.198 val_kl: 0.034 val_loss: 0.535
+validating
+Val loss:   0.37510
+val_l1: 0.197 val_kl: 0.018 val_loss: 0.375
+validating
+Val loss:   0.42531
+val_l1: 0.202 val_kl: 0.022 val_loss: 0.425
+validating
+Val loss:   0.46939
+val_l1: 0.210 val_kl: 0.026 val_loss: 0.469
+validating
+Val loss:   0.39652
+val_l1: 0.206 val_kl: 0.019 val_loss: 0.397
+validating
+Val loss:   0.40668
+val_l1: 0.196 val_kl: 0.021 val_loss: 0.407
+validating
+Val loss:   0.36246
+val_l1: 0.199 val_kl: 0.016 val_loss: 0.362
+validating
+Val loss:   0.33096
+val_l1: 0.199 val_kl: 0.013 val_loss: 0.331
+Training finished:
+Seed 0, val loss 0.330964 at step 5000
+Best ckpt, val loss 0.330964 @ step5000
