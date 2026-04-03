@@ -1,0 +1,109 @@
+Found 41 hdf5 files
+
+
+Data from: ['/home/ysy/data/teleop_data/rotate_hdf5']
+- Train on [40] episodes
+- Test on [1] episodes
+
+
+Found 41 hdf5 files
+Norm stats from: ['/home/ysy/data/teleop_data/rotate_hdf5']
+Initializing transformations
+Initializing transformations
+Augment images: True, train_num_workers: 16, val_num_workers: 8
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+number of parameters: 6.727067e+07
+number of parameters: 89.66M
+  0%|                                                                                                                                       | 0/100001 [00:05<?, ?it/s]
+validating
+Traceback (most recent call last):
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 708, in <module>
+    main(vars(parser.parse_args()))
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 206, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 610, in train_bc
+    forward_dict = forward_pass(data, policy)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 572, in forward_pass
+    return policy(qpos_data, image_data, action_data, is_pad) # TODO remove None
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/policy.py", line 125, in __call__
+    noise_pred = nets['policy']['noise_pred_net'](noisy_actions, timesteps, global_cond=obs_cond)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/robomimic/robomimic/algo/diffusion_policy.py", line 670, in forward
+    x = resnet(x, global_feature)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/robomimic/robomimic/algo/diffusion_policy.py", line 537, in forward
+    out = self.blocks[0](x)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/robomimic/robomimic/algo/diffusion_policy.py", line 498, in forward
+    return self.block(x)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/container.py", line 244, in forward
+    input = module(input)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 371, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 366, in _conv_forward
+    return F.conv1d(
+RuntimeError: Given groups=1, weight of size [256, 16, 5], expected input[32, 8, 32] to have 16 channels, but got 8 channels instead
+Traceback (most recent call last):
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 708, in <module>
+    main(vars(parser.parse_args()))
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 206, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 610, in train_bc
+    forward_dict = forward_pass(data, policy)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 572, in forward_pass
+    return policy(qpos_data, image_data, action_data, is_pad) # TODO remove None
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/policy.py", line 125, in __call__
+    noise_pred = nets['policy']['noise_pred_net'](noisy_actions, timesteps, global_cond=obs_cond)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/robomimic/robomimic/algo/diffusion_policy.py", line 670, in forward
+    x = resnet(x, global_feature)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/robomimic/robomimic/algo/diffusion_policy.py", line 537, in forward
+    out = self.blocks[0](x)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/robomimic/robomimic/algo/diffusion_policy.py", line 498, in forward
+    return self.block(x)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/container.py", line 244, in forward
+    input = module(input)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 371, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 366, in _conv_forward
+    return F.conv1d(
+RuntimeError: Given groups=1, weight of size [256, 16, 5], expected input[32, 8, 32] to have 16 channels, but got 8 channels instead

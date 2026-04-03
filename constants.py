@@ -12,16 +12,22 @@ import os
 #DATA_DIR ='/home/shuxiangzhang/act-yang/data_12(11)/data'#开门
 #DATA_DIR ='/home/shuxiangzhang/act_realman/data_12_grasp/data'#抓取
 #DATA_DIR ='/home/shuxiangzhang/act_realman/data_lap_hand/data'#顶部相机
-DATA_DIR = '/home/shuxiangzhang/act_realman/data_handchange/data'#虎口相机
+DATA_DIR = '/home/ysy/data/aloha'
 
 REAL_TASK_CONFIGS = {
-    'real_test01': {
-        'dataset_dir': DATA_DIR + '/real_test01',
-        'num_episodes': 50,
+    'single_arm_left': {
+        'dataset_dir': '/home/ysy/data/teleop_data/20260402_1_hdf5',  # 转换后的数据目录
         'episode_len': 500,
-        'camera_names': ['cam01', 'cam02'],
-        'action_dim': 12,  # 添加这一行，指定动作维度为8
-        'state_dim': 12    # 添加这一行，指定状态维度为8
+        'camera_names': ['camera_head_image', 'camera_left_image'],
+        'action_dim': 8,   # 7 joints + 1 gripper
+        'state_dim': 8     # 7 joints + 1 gripper
+    },
+    'aloha': {
+        'dataset_dir': DATA_DIR,
+        'episode_len': 500,
+        'camera_names': ['cam_high', 'cam_left_wrist', 'cam_right_wrist'],
+        'action_dim': 16,  # 14 joint actions + 2 base actions
+        'state_dim': 14    # qpos dimension
     },
     # 'real_single_arm': {
     #     "dataset_dir": "data/real_episodes_prepared",  # 你 prepare_real_h5.py 生成的路径

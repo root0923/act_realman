@@ -34,7 +34,7 @@ class DiffusionPolicy(nn.Module):
         self.num_kp = 32
         self.feature_dimension = 64
         self.ac_dim = args_override['action_dim'] # 14 + 2
-        self.obs_dim = self.feature_dimension * len(self.camera_names) + 14 # camera features and proprio
+        self.obs_dim = self.feature_dimension * len(self.camera_names) + args_override['state_dim'] # camera features and proprio
 
         backbones = []
         pools = []
@@ -67,7 +67,7 @@ class DiffusionPolicy(nn.Module):
         nets = nets.float().cuda()
         ENABLE_EMA = True
         if ENABLE_EMA:
-            ema = EMAModel(model=nets, power=self.ema_power)
+            ema = EMAModel(parameters=nets.parameters(), power=self.ema_power)
         else:
             ema = None
         self.nets = nets
@@ -133,7 +133,7 @@ class DiffusionPolicy(nn.Module):
             loss_dict['loss'] = loss
 
             if self.training and self.ema is not None:
-                self.ema.step(nets)
+                self.ema.step(nets.parameters())
             return loss_dict
         else: # inference time
             To = self.observation_horizon
@@ -143,7 +143,7 @@ class DiffusionPolicy(nn.Module):
             
             nets = self.nets
             if self.ema is not None:
-                nets = self.ema.averaged_model
+                self.ema.copy_to(nets.parameters())
             
             all_features = []
             for cam_id in range(len(self.camera_names)):
@@ -182,17 +182,20 @@ class DiffusionPolicy(nn.Module):
             return naction
 
     def serialize(self):
+        ema_state = None
+        if self.ema is not None:
+            ema_state = self.ema.state_dict()
         return {
             "nets": self.nets.state_dict(),
-            "ema": self.ema.averaged_model.state_dict() if self.ema is not None else None,
+            "ema": ema_state,
         }
 
     def deserialize(self, model_dict):
         status = self.nets.load_state_dict(model_dict["nets"])
         print('Loaded model')
-        if model_dict.get("ema", None) is not None:
+        if model_dict.get("ema", None) is not None and self.ema is not None:
             print('Loaded EMA')
-            status_ema = self.ema.averaged_model.load_state_dict(model_dict["ema"])
+            status_ema = self.ema.load_state_dict(model_dict["ema"])
             status = [status, status_ema]
         return status
 
@@ -208,6 +211,7 @@ class ACTPolicy(nn.Module):
 
     def __call__(self, qpos, image, actions=None, is_pad=None, vq_sample=None):
         env_state = None
+        # ImageNet归一化统一量（1400万+张图片）
         normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                          std=[0.229, 0.224, 0.225])
         image = normalize(image)

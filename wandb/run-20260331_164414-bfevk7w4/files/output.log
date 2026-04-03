@@ -1,0 +1,50 @@
+Found 63 hdf5 files
+
+
+Data from: ['/home/ysy/data/teleop_data/20260331_hdf5']
+- Train on [62] episodes
+- Test on [1] episodes
+
+
+Found 63 hdf5 files
+Norm stats from: ['/home/ysy/data/teleop_data/20260331_hdf5']
+Initializing transformations
+Initializing transformations
+Augment images: True, train_num_workers: 16, val_num_workers: 8
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+number of parameters: 6.717031e+07
+number of parameters: 89.56M
+  9%|███████████                                                                                                               | 9022/100001 [57:05<7:01:14,  3.60it/s]
+validating
+Val loss:   1.06906
+val_l2_loss: 1.069 val_loss: 1.069
+validating
+Val loss:   0.02349
+val_l2_loss: 0.023 val_loss: 0.023
+validating
+Val loss:   0.01864
+val_l2_loss: 0.019 val_loss: 0.019
+validating
+Val loss:   0.01691
+val_l2_loss: 0.017 val_loss: 0.017
+validating
+Val loss:   0.01505
+val_l2_loss: 0.015 val_loss: 0.015
+validating
+Val loss:   0.01652
+val_l2_loss: 0.017 val_loss: 0.017
+validating
+Val loss:   0.01357
+val_l2_loss: 0.014 val_loss: 0.014
+validating
+Val loss:   0.01512
+val_l2_loss: 0.015 val_loss: 0.015
+validating
+Val loss:   0.01390
+val_l2_loss: 0.014 val_loss: 0.014
+validating
+Val loss:   0.01512
+val_l2_loss: 0.015 val_loss: 0.015

@@ -1,0 +1,327 @@
+Found 40 hdf5 files
+
+
+Data from: ['/home/ysy/data/teleop_data/rotate_hdf5']
+- Train on [39] episodes
+- Test on [1] episodes
+
+
+Found 40 hdf5 files
+Norm stats from: ['/home/ysy/data/teleop_data/rotate_hdf5']
+Initializing transformations
+Initializing transformations
+Augment images: True, train_num_workers: 16, val_num_workers: 8
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+number of parameters: 6.717031e+07
+number of parameters: 89.56M
+  7%|████████                                                                                                                  | 6645/100001 [41:42<7:45:47,  3.34it/s][34m[1mwandb[0m: [33mWARNING[0m Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
+validating
+Val loss:   1.09597
+val_l2_loss: 1.096 val_loss: 1.096
+validating
+Val loss:   0.02583
+val_l2_loss: 0.026 val_loss: 0.026
+validating
+Val loss:   0.02079
+val_l2_loss: 0.021 val_loss: 0.021
+validating
+Val loss:   0.01776
+val_l2_loss: 0.018 val_loss: 0.018
+validating
+Val loss:   0.01758
+val_l2_loss: 0.018 val_loss: 0.018
+validating
+Val loss:   0.01769
+val_l2_loss: 0.018 val_loss: 0.018
+validating
+Val loss:   0.01609
+val_l2_loss: 0.016 val_loss: 0.016
+ 17%|████████████████████▏                                                                                                  | 17000/100001 [1:45:27<6:50:21,  3.37it/s]
+validating
+Val loss:   0.01859
+val_l2_loss: 0.019 val_loss: 0.019
+validating
+Val loss:   0.01712
+val_l2_loss: 0.017 val_loss: 0.017
+validating
+Val loss:   0.01825
+val_l2_loss: 0.018 val_loss: 0.018
+validating
+Val loss:   0.02000
+val_l2_loss: 0.020 val_loss: 0.020
+validating
+Val loss:   0.02286
+val_l2_loss: 0.023 val_loss: 0.023
+validating
+Val loss:   0.01885
+val_l2_loss: 0.019 val_loss: 0.019
+validating
+Val loss:   0.01955
+val_l2_loss: 0.020 val_loss: 0.020
+validating
+Val loss:   0.01922
+val_l2_loss: 0.019 val_loss: 0.019
+validating
+Val loss:   0.02298
+val_l2_loss: 0.023 val_loss: 0.023
+validating
+Val loss:   0.02202
+val_l2_loss: 0.022 val_loss: 0.022
+validating
+Val loss:   0.02198
+val_l2_loss: 0.022 val_loss: 0.022
+validating
+Val loss:   0.02227
+val_l2_loss: 0.022 val_loss: 0.022
+validating
+Val loss:   0.02283
+val_l2_loss: 0.023 val_loss: 0.023
+validating
+Val loss:   0.02509
+val_l2_loss: 0.025 val_loss: 0.025
+validating
+Val loss:   0.02261
+val_l2_loss: 0.023 val_loss: 0.023
+validating
+Val loss:   0.02756
+val_l2_loss: 0.028 val_loss: 0.028
+validating
+Val loss:   0.02389
+val_l2_loss: 0.024 val_loss: 0.024
+validating
+Val loss:   0.02810
+val_l2_loss: 0.028 val_loss: 0.028
+validating
+Val loss:   0.02713
+val_l2_loss: 0.027 val_loss: 0.027
+validating
+Val loss:   0.02500
+val_l2_loss: 0.025 val_loss: 0.025
+validating
+Val loss:   0.02898
+val_l2_loss: 0.029 val_loss: 0.029
+validating
+Val loss:   0.02887
+val_l2_loss: 0.029 val_loss: 0.029
+validating
+Val loss:   0.02918
+val_l2_loss: 0.029 val_loss: 0.029
+validating
+Val loss:   0.02992
+val_l2_loss: 0.030 val_loss: 0.030
+validating
+Val loss:   0.03045
+val_l2_loss: 0.030 val_loss: 0.030
+validating
+Val loss:   0.02802
+val_l2_loss: 0.028 val_loss: 0.028
+validating
+Val loss:   0.03218
+val_l2_loss: 0.032 val_loss: 0.032
+validating
+Val loss:   0.03229
+val_l2_loss: 0.032 val_loss: 0.032
+validating
+Val loss:   0.03191
+val_l2_loss: 0.032 val_loss: 0.032
+validating
+Val loss:   0.02658
+val_l2_loss: 0.027 val_loss: 0.027
+validating
+Val loss:   0.03464
+val_l2_loss: 0.035 val_loss: 0.035
+validating
+Val loss:   0.03310
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.03310
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.03107
+val_l2_loss: 0.031 val_loss: 0.031
+validating
+Val loss:   0.03441
+val_l2_loss: 0.034 val_loss: 0.034
+validating
+Val loss:   0.03233
+val_l2_loss: 0.032 val_loss: 0.032
+validating
+Val loss:   0.03342
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.03073
+val_l2_loss: 0.031 val_loss: 0.031
+validating
+Val loss:   0.03568
+val_l2_loss: 0.036 val_loss: 0.036
+validating
+Val loss:   0.03744
+val_l2_loss: 0.037 val_loss: 0.037
+validating
+Val loss:   0.03838
+val_l2_loss: 0.038 val_loss: 0.038
+validating
+Val loss:   0.03322
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.02863
+val_l2_loss: 0.029 val_loss: 0.029
+validating
+Val loss:   0.03486
+val_l2_loss: 0.035 val_loss: 0.035
+validating
+Val loss:   0.03752
+val_l2_loss: 0.038 val_loss: 0.038
+validating
+Val loss:   0.03854
+val_l2_loss: 0.039 val_loss: 0.039
+validating
+Val loss:   0.03593
+val_l2_loss: 0.036 val_loss: 0.036
+validating
+Val loss:   0.04077
+val_l2_loss: 0.041 val_loss: 0.041
+validating
+Val loss:   0.03799
+val_l2_loss: 0.038 val_loss: 0.038
+validating
+Val loss:   0.04204
+val_l2_loss: 0.042 val_loss: 0.042
+validating
+Val loss:   0.03593
+val_l2_loss: 0.036 val_loss: 0.036
+validating
+Val loss:   0.04062
+val_l2_loss: 0.041 val_loss: 0.041
+validating
+Val loss:   0.03255
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.04204
+val_l2_loss: 0.042 val_loss: 0.042
+validating
+Val loss:   0.03339
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.03690
+val_l2_loss: 0.037 val_loss: 0.037
+validating
+Val loss:   0.04257
+val_l2_loss: 0.043 val_loss: 0.043
+validating
+Val loss:   0.03994
+val_l2_loss: 0.040 val_loss: 0.040
+validating
+Val loss:   0.03439
+val_l2_loss: 0.034 val_loss: 0.034
+validating
+Val loss:   0.03832
+val_l2_loss: 0.038 val_loss: 0.038
+validating
+Val loss:   0.03975
+val_l2_loss: 0.040 val_loss: 0.040
+validating
+Val loss:   0.03992
+val_l2_loss: 0.040 val_loss: 0.040
+validating
+Val loss:   0.03812
+val_l2_loss: 0.038 val_loss: 0.038
+validating
+Val loss:   0.03781
+val_l2_loss: 0.038 val_loss: 0.038
+validating
+Val loss:   0.03300
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.03598
+val_l2_loss: 0.036 val_loss: 0.036
+validating
+Val loss:   0.04002
+val_l2_loss: 0.040 val_loss: 0.040
+validating
+Val loss:   0.04297
+val_l2_loss: 0.043 val_loss: 0.043
+validating
+Val loss:   0.04430
+val_l2_loss: 0.044 val_loss: 0.044
+validating
+Val loss:   0.04326
+val_l2_loss: 0.043 val_loss: 0.043
+validating
+Val loss:   0.03851
+val_l2_loss: 0.039 val_loss: 0.039
+validating
+Val loss:   0.05106
+val_l2_loss: 0.051 val_loss: 0.051
+validating
+Val loss:   0.03868
+val_l2_loss: 0.039 val_loss: 0.039
+validating
+Val loss:   0.04624
+val_l2_loss: 0.046 val_loss: 0.046
+validating
+Val loss:   0.04387
+val_l2_loss: 0.044 val_loss: 0.044
+validating
+Val loss:   0.04511
+val_l2_loss: 0.045 val_loss: 0.045
+validating
+Val loss:   0.03926
+val_l2_loss: 0.039 val_loss: 0.039
+validating
+Val loss:   0.04617
+val_l2_loss: 0.046 val_loss: 0.046
+validating
+Val loss:   0.03945
+val_l2_loss: 0.039 val_loss: 0.039
+validating
+Val loss:   0.03966
+val_l2_loss: 0.040 val_loss: 0.040
+validating
+Val loss:   0.03730
+val_l2_loss: 0.037 val_loss: 0.037
+validating
+Val loss:   0.04652
+val_l2_loss: 0.047 val_loss: 0.047
+validating
+Val loss:   0.04635
+val_l2_loss: 0.046 val_loss: 0.046
+validating
+Val loss:   0.04035
+val_l2_loss: 0.040 val_loss: 0.040
+validating
+Val loss:   0.04476
+val_l2_loss: 0.045 val_loss: 0.045
+validating
+Val loss:   0.04051
+val_l2_loss: 0.041 val_loss: 0.041
+validating
+Val loss:   0.04072
+val_l2_loss: 0.041 val_loss: 0.041
+validating
+Val loss:   0.04571
+val_l2_loss: 0.046 val_loss: 0.046
+validating
+Val loss:   0.04679
+val_l2_loss: 0.047 val_loss: 0.047
+validating
+Val loss:   0.04752
+val_l2_loss: 0.048 val_loss: 0.048
+validating
+Val loss:   0.03862
+val_l2_loss: 0.039 val_loss: 0.039
+validating
+Val loss:   0.04504
+val_l2_loss: 0.045 val_loss: 0.045
+validating
+Val loss:   0.04574
+val_l2_loss: 0.046 val_loss: 0.046
+validating
+Val loss:   0.04170
+val_l2_loss: 0.042 val_loss: 0.042
+Training finished:
+Seed 0, val loss 0.016087 at step 6000
+Best ckpt, val loss 0.016087 @ step6000

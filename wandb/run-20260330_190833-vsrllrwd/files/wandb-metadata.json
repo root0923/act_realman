@@ -1,0 +1,62 @@
+{
+  "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.9.25",
+  "startedAt": "2026-03-30T11:08:33.394242Z",
+  "args": [
+    "--task_name",
+    "single_arm_left",
+    "--ckpt_dir",
+    "ckpt/single_arm_left_diffusion",
+    "--policy_class",
+    "Diffusion",
+    "--chunk_size",
+    "32",
+    "--batch_size",
+    "32",
+    "--num_steps",
+    "100000",
+    "--lr",
+    "1e-4",
+    "--seed",
+    "0",
+    "--validate_every",
+    "1000",
+    "--save_every",
+    "1000"
+  ],
+  "program": "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py",
+  "codePath": "imitate_episodes.py",
+  "codePathLocal": "imitate_episodes.py",
+  "git": {
+    "remote": "https://github.com/root0923/act_realman.git",
+    "commit": "e1314ae94bd95718b61dd7d8ad316e568f4368d0"
+  },
+  "email": "betty777sy@gmail.com",
+  "root": "/home/ysy/robotics/code/act_realman_oymotion-update",
+  "host": "ysy",
+  "executable": "/home/ysy/.miniconda/envs/realman/bin/python",
+  "cpu_count": 24,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA RTX 5880 Ada Generation",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "982820896768",
+      "used": "897167831040"
+    }
+  },
+  "memory": {
+    "total": "67178565632"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX 5880 Ada Generation",
+      "memoryTotal": "51527024640",
+      "cudaCores": 14080,
+      "architecture": "Ada",
+      "uuid": "GPU-e84f740c-3be8-06c5-5ae9-d87901a1c7c7"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "wkjuuzsgsvyl28l9vkz1yksjqqcjknn3"
+}

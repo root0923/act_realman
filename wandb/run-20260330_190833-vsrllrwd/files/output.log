@@ -1,0 +1,116 @@
+Found 41 hdf5 files
+
+
+Data from: ['/home/ysy/data/teleop_data/rotate_hdf5']
+- Train on [40] episodes
+- Test on [1] episodes
+
+
+Found 41 hdf5 files
+Norm stats from: ['/home/ysy/data/teleop_data/rotate_hdf5']
+Initializing transformations
+Initializing transformations
+Augment images: True, train_num_workers: 16, val_num_workers: 8
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+number of parameters: 6.717031e+07
+number of parameters: 89.56M
+ 10%|███████████▉                                                                                                           | 10000/100001 [1:01:04<9:08:21,  2.74it/s]
+validating
+Val loss:   1.10683
+val_l2_loss: 1.107 val_loss: 1.107
+validating
+Val loss:   0.02901
+val_l2_loss: 0.029 val_loss: 0.029
+validating
+Val loss:   0.02303
+val_l2_loss: 0.023 val_loss: 0.023
+validating
+Val loss:   0.02742
+val_l2_loss: 0.027 val_loss: 0.027
+validating
+Val loss:   0.02592
+val_l2_loss: 0.026 val_loss: 0.026
+validating
+Val loss:   0.02411
+val_l2_loss: 0.024 val_loss: 0.024
+validating
+Val loss:   0.03209
+val_l2_loss: 0.032 val_loss: 0.032
+validating
+Val loss:   0.03665
+val_l2_loss: 0.037 val_loss: 0.037
+validating
+Val loss:   0.03196
+val_l2_loss: 0.032 val_loss: 0.032
+validating
+Val loss:   0.03986
+val_l2_loss: 0.040 val_loss: 0.040
+validating
+Val loss:   0.03938
+val_l2_loss: 0.039 val_loss: 0.039
+validating
+Val loss:   0.04268
+val_l2_loss: 0.043 val_loss: 0.043
+validating
+Val loss:   0.04172
+val_l2_loss: 0.042 val_loss: 0.042
+validating
+Val loss:   0.03672
+val_l2_loss: 0.037 val_loss: 0.037
+validating
+Val loss:   0.04871
+val_l2_loss: 0.049 val_loss: 0.049
+validating
+Val loss:   0.04458
+val_l2_loss: 0.045 val_loss: 0.045
+validating
+Val loss:   0.05387
+val_l2_loss: 0.054 val_loss: 0.054
+validating
+Val loss:   0.04373
+val_l2_loss: 0.044 val_loss: 0.044
+validating
+Val loss:   0.04877
+val_l2_loss: 0.049 val_loss: 0.049
+validating
+Val loss:   0.05401
+val_l2_loss: 0.054 val_loss: 0.054
+validating
+Val loss:   0.05325
+val_l2_loss: 0.053 val_loss: 0.053
+validating
+Val loss:   0.05247
+val_l2_loss: 0.052 val_loss: 0.052
+validating
+Val loss:   0.05995
+val_l2_loss: 0.060 val_loss: 0.060
+validating
+Val loss:   0.05796
+val_l2_loss: 0.058 val_loss: 0.058
+validating
+Val loss:   0.07066
+val_l2_loss: 0.071 val_loss: 0.071
+validating
+Val loss:   0.06958
+val_l2_loss: 0.070 val_loss: 0.070
+Traceback (most recent call last):
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/serialization.py", line 967, in save
+    _save(
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/serialization.py", line 1268, in _save
+    zip_file.write_record(name, storage, num_bytes)
+RuntimeError: [enforce fail at inline_container.cc:858] . PytorchStreamWriter failed writing file data/506: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 709, in <module>
+    main(vars(parser.parse_args()))
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 207, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 636, in train_bc
+    torch.save(policy.serialize(), ckpt_path)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/serialization.py", line 974, in save
+    return

@@ -1,0 +1,115 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            etzz4f66irme4dftxhs6j744og1fet4x:
+                args:
+                    - --task_name
+                    - single_arm_left
+                    - --ckpt_dir
+                    - ckpt/single_arm_left_diffusion
+                    - --policy_class
+                    - Diffusion
+                    - --chunk_size
+                    - "32"
+                    - --batch_size
+                    - "32"
+                    - --num_steps
+                    - "100000"
+                    - --lr
+                    - "1e-4"
+                    - --seed
+                    - "0"
+                    - --validate_every
+                    - "1000"
+                    - --save_every
+                    - "1000"
+                codePath: imitate_episodes.py
+                codePathLocal: imitate_episodes.py
+                email: betty777sy@gmail.com
+                executable: /home/ysy/.miniconda/envs/realman/bin/python
+                git:
+                    commit: e1314ae94bd95718b61dd7d8ad316e568f4368d0
+                    remote: https://github.com/root0923/act_realman.git
+                host: ysy
+                os: Linux-6.8.0-40-generic-x86_64-with-glibc2.35
+                program: /home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py
+                python: CPython 3.9.25
+                root: /home/ysy/robotics/code/act_realman_oymotion-update
+                startedAt: "2026-03-30T11:03:38.674947Z"
+                writerId: etzz4f66irme4dftxhs6j744og1fet4x
+        m: []
+        python_version: 3.9.25
+        t:
+            "1":
+                - 1
+                - 41
+                - 49
+                - 83
+            "2":
+                - 1
+                - 41
+                - 49
+                - 83
+            "3":
+                - 13
+            "4": 3.9.25
+            "5": 0.25.1
+            "10":
+                - 20
+            "12": 0.25.1
+            "13": linux-x86_64
+actuator_config:
+    value:
+        actuator_network_dir: null
+        future_len: null
+        history_len: null
+        prediction_len: null
+camera_names:
+    value:
+        - camera_head_image
+        - camera_left_image
+ckpt_dir:
+    value: ckpt/single_arm_left_diffusion
+episode_len:
+    value: 500
+eval_every:
+    value: 500
+load_pretrain:
+    value: false
+lr:
+    value: 0.0001
+num_steps:
+    value: 100000
+onscreen_render:
+    value: false
+policy_class:
+    value: Diffusion
+policy_config:
+    value:
+        action_dim: 16
+        action_horizon: 8
+        camera_names:
+            - camera_head_image
+            - camera_left_image
+        ema_power: 0.75
+        lr: 0.0001
+        num_inference_timesteps: 10
+        num_queries: 32
+        observation_horizon: 1
+        prediction_horizon: 32
+        vq: false
+real_robot:
+    value: true
+resume_ckpt_path:
+    value: null
+save_every:
+    value: 1000
+seed:
+    value: 0
+task_name:
+    value: single_arm_left
+temporal_agg:
+    value: false
+validate_every:
+    value: 1000

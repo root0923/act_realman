@@ -55,17 +55,12 @@ class EpisodicDataset(torch.utils.data.Dataset):
                     is_sim = root.attrs['sim']
                 except:
                     is_sim = False
-                # compressed = root.attrs.get('compress', False)
-                # if '/base_action' in root:
-                #     base_action = root['/base_action'][()]
-                #     base_action = preprocess_base_action(base_action)
-                #     action = np.concatenate([root['/action'][()], base_action], axis=-1)
-                # else:  
-                #     action = root['/action'][()]
-                #     dummy_base_action = np.zeros([action.shape[0], 2])
-                #     action = np.concatenate([action, dummy_base_action], axis=-1)
-                
-                action = root['/action'][()]
+                if '/base_action' in root:
+                    base_action = root['/base_action'][()]
+                    base_action = preprocess_base_action(base_action)
+                    action = np.concatenate([root['/action'][()], base_action], axis=-1)
+                else:
+                    action = root['/action'][()]
                 
                 original_action_shape = action.shape
                 episode_len = original_action_shape[0]
@@ -75,11 +70,12 @@ class EpisodicDataset(torch.utils.data.Dataset):
                 image_dict = dict()
                 for cam_name in self.camera_names:
                     image_dict[cam_name] = root[f'/observations/images/{cam_name}'][start_ts]
-                
-                # if compressed:
-                #     for cam_name in image_dict.keys():
-                #         decompressed_image = cv2.imdecode(image_dict[cam_name], 1)
-                #         image_dict[cam_name] = np.array(decompressed_image)
+
+                compressed = root.attrs.get('compress', False)
+                if compressed:
+                    for cam_name in image_dict.keys():
+                        decompressed_image = cv2.imdecode(image_dict[cam_name], 1)
+                        image_dict[cam_name] = np.array(decompressed_image)
                 
                 # get all actions after and including start_ts
                 if is_sim:
@@ -140,8 +136,11 @@ class EpisodicDataset(torch.utils.data.Dataset):
             qpos_data = (qpos_data - self.norm_stats["qpos_mean"]) / self.norm_stats["qpos_std"]
             
 
-        except:
+        except Exception as e:
             print(f'Error loading {dataset_path} in __getitem__')
+            print(f'Exception: {e}')
+            import traceback
+            traceback.print_exc()
             quit()
 
         # print('output shape of dataloader', '\n', image_data.dtype, qpos_data.dtype, action_data.dtype, is_pad.dtype)

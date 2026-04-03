@@ -1,0 +1,25 @@
+2026-04-02 18:35:46,697 INFO    MainThread:18505 [wandb_setup.py:_flush():81] Current SDK version is 0.25.1
+2026-04-02 18:35:46,697 INFO    MainThread:18505 [wandb_setup.py:_flush():81] Configure stats pid to 18505
+2026-04-02 18:35:46,697 INFO    MainThread:18505 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-02 18:35:46,697 INFO    MainThread:18505 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /home/ysy/robotics/code/act_realman_oymotion-update/wandb/run-20260402_183546-j8lhemmr/logs/debug.log
+2026-04-02 18:35:46,698 INFO    MainThread:18505 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /home/ysy/robotics/code/act_realman_oymotion-update/wandb/run-20260402_183546-j8lhemmr/logs/debug-internal.log
+2026-04-02 18:35:46,698 INFO    MainThread:18505 [wandb_init.py:init():844] calling init triggers
+2026-04-02 18:35:46,698 INFO    MainThread:18505 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-04-02 18:35:46,698 INFO    MainThread:18505 [wandb_init.py:init():892] starting backend
+2026-04-02 18:35:46,956 INFO    MainThread:18505 [wandb_init.py:init():895] sending inform_init request
+2026-04-02 18:35:46,963 INFO    MainThread:18505 [wandb_init.py:init():903] backend started and connected
+2026-04-02 18:35:46,971 INFO    MainThread:18505 [wandb_init.py:init():973] updated telemetry
+2026-04-02 18:35:46,992 INFO    MainThread:18505 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-04-02 18:35:48,590 INFO    MainThread:18505 [wandb_init.py:init():1042] starting run threads in backend
+2026-04-02 18:35:48,651 INFO    MainThread:18505 [wandb_run.py:_console_start():2524] atexit reg
+2026-04-02 18:35:48,651 INFO    MainThread:18505 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-04-02 18:35:48,651 INFO    MainThread:18505 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-04-02 18:35:48,651 INFO    MainThread:18505 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-04-02 18:35:48,653 INFO    MainThread:18505 [wandb_init.py:init():1082] run started, returning control to user process
+2026-04-02 18:35:48,653 INFO    MainThread:18505 [wandb_run.py:_config_callback():1403] config_cb None None {'num_steps': 100000, 'eval_every': 500, 'validate_every': 1000, 'save_every': 1000, 'ckpt_dir': '/home/ysy/data/weights/single_arm_left_diffusion_0402', 'resume_ckpt_path': None, 'episode_len': 500, 'lr': 0.0001, 'policy_class': 'Diffusion', 'onscreen_render': False, 'policy_config': {'lr': 0.0001, 'camera_names': ['camera_head_image', 'camera_left_image'], 'action_dim': 8, 'state_dim': 8, 'observation_horizon': 1, 'action_horizon': 8, 'prediction_horizon': 32, 'num_queries': 32, 'num_inference_timesteps': 10, 'ema_power': 0.75, 'vq': False}, 'task_name': 'single_arm_left', 'seed': 0, 'temporal_agg': False, 'camera_names': ['camera_head_image', 'camera_left_image'], 'real_robot': True, 'load_pretrain': False, 'actuator_config': {'actuator_network_dir': None, 'history_len': None, 'future_len': None, 'prediction_len': None}}
+2026-04-03 04:42:20,046 INFO    MainThread:18505 [wandb_run.py:_finish():2291] finishing run happyroot-swufe/act_test/j8lhemmr
+2026-04-03 04:42:20,047 INFO    MainThread:18505 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-04-03 04:42:20,048 INFO    MainThread:18505 [wandb_run.py:_restore():2472] restore
+2026-04-03 04:42:20,048 INFO    MainThread:18505 [wandb_run.py:_restore():2478] restore done
+2026-04-03 04:42:40,223 INFO    MainThread:18505 [wandb_run.py:_footer_sync_info():3868] logging synced files

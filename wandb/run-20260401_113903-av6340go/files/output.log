@@ -1,0 +1,148 @@
+Found 42 hdf5 files
+
+
+Data from: ['/home/ysy/data/teleop_data/20260401_hdf5']
+- Train on [41] episodes
+- Test on [1] episodes
+
+
+Found 42 hdf5 files
+Norm stats from: ['/home/ysy/data/teleop_data/20260401_hdf5']
+Initializing transformations
+Initializing transformations
+Augment images: False, train_num_workers: 16, val_num_workers: 8
+======================
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Use VQ: False, None, None
+number of parameters: 95.08M
+KL Weight 10
+ 25%|███████████████████████████████▏                                                                                             | 5000/20001 [10:37<29:58,  8.34it/s]
+validating
+Val loss:   92.71776
+val_l1: 0.711 val_kl: 9.201 val_loss: 92.718
+validating
+Val loss:   0.54000
+val_l1: 0.271 val_kl: 0.027 val_loss: 0.540
+validating
+Val loss:   0.36522
+val_l1: 0.236 val_kl: 0.013 val_loss: 0.365
+validating
+Val loss:   0.37151
+val_l1: 0.247 val_kl: 0.012 val_loss: 0.372
+validating
+Val loss:   0.32937
+val_l1: 0.220 val_kl: 0.011 val_loss: 0.329
+validating
+Val loss:   0.33376
+val_l1: 0.211 val_kl: 0.012 val_loss: 0.334
+validating
+Val loss:   0.31734
+val_l1: 0.230 val_kl: 0.009 val_loss: 0.317
+validating
+Val loss:   0.27244
+val_l1: 0.211 val_kl: 0.006 val_loss: 0.272
+validating
+Val loss:   0.28611
+val_l1: 0.231 val_kl: 0.006 val_loss: 0.286
+validating
+Val loss:   0.27700
+val_l1: 0.229 val_kl: 0.005 val_loss: 0.277
+validating
+Val loss:   0.28422
+val_l1: 0.230 val_kl: 0.005 val_loss: 0.284
+validating
+Val loss:   0.25438
+val_l1: 0.214 val_kl: 0.004 val_loss: 0.254
+validating
+Val loss:   0.25221
+val_l1: 0.218 val_kl: 0.003 val_loss: 0.252
+validating
+Val loss:   0.25027
+val_l1: 0.213 val_kl: 0.004 val_loss: 0.250
+validating
+Val loss:   0.24508
+val_l1: 0.218 val_kl: 0.003 val_loss: 0.245
+validating
+Val loss:   0.23584
+val_l1: 0.212 val_kl: 0.002 val_loss: 0.236
+validating
+Val loss:   0.22788
+val_l1: 0.208 val_kl: 0.002 val_loss: 0.228
+validating
+Val loss:   0.23727
+val_l1: 0.215 val_kl: 0.002 val_loss: 0.237
+validating
+Val loss:   0.23151
+val_l1: 0.215 val_kl: 0.002 val_loss: 0.232
+validating
+Val loss:   0.23887
+val_l1: 0.219 val_kl: 0.002 val_loss: 0.239
+validating
+Val loss:   0.26291
+val_l1: 0.242 val_kl: 0.002 val_loss: 0.263
+validating
+Val loss:   0.21982
+val_l1: 0.201 val_kl: 0.002 val_loss: 0.220
+validating
+Val loss:   0.22544
+val_l1: 0.211 val_kl: 0.001 val_loss: 0.225
+validating
+Val loss:   0.21381
+val_l1: 0.200 val_kl: 0.001 val_loss: 0.214
+validating
+Val loss:   0.23361
+val_l1: 0.222 val_kl: 0.001 val_loss: 0.234
+validating
+Val loss:   0.20910
+val_l1: 0.193 val_kl: 0.002 val_loss: 0.209
+validating
+Val loss:   0.22707
+val_l1: 0.212 val_kl: 0.002 val_loss: 0.227
+validating
+Val loss:   0.22424
+val_l1: 0.213 val_kl: 0.001 val_loss: 0.224
+validating
+Val loss:   0.20677
+val_l1: 0.195 val_kl: 0.001 val_loss: 0.207
+validating
+Val loss:   0.24722
+val_l1: 0.236 val_kl: 0.001 val_loss: 0.247
+validating
+Val loss:   0.22548
+val_l1: 0.215 val_kl: 0.001 val_loss: 0.225
+validating
+Val loss:   0.22401
+val_l1: 0.212 val_kl: 0.001 val_loss: 0.224
+validating
+Val loss:   0.21511
+val_l1: 0.206 val_kl: 0.001 val_loss: 0.215
+validating
+Val loss:   0.21752
+val_l1: 0.211 val_kl: 0.001 val_loss: 0.218
+validating
+Val loss:   0.21846
+val_l1: 0.210 val_kl: 0.001 val_loss: 0.218
+validating
+Val loss:   0.22505
+val_l1: 0.218 val_kl: 0.001 val_loss: 0.225
+validating
+Val loss:   0.24080
+val_l1: 0.233 val_kl: 0.001 val_loss: 0.241
+validating
+Val loss:   0.24625
+val_l1: 0.239 val_kl: 0.001 val_loss: 0.246
+validating
+Val loss:   0.22196
+val_l1: 0.215 val_kl: 0.001 val_loss: 0.222
+validating
+Val loss:   0.23081
+val_l1: 0.225 val_kl: 0.001 val_loss: 0.231
+validating
+Val loss:   0.22109
+val_l1: 0.214 val_kl: 0.001 val_loss: 0.221
+Training finished:
+Seed 0, val loss 0.206768 at step 14000
+Best ckpt, val loss 0.206768 @ step14000

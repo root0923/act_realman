@@ -1,0 +1,39 @@
+{
+  "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.9.25",
+  "startedAt": "2026-03-30T11:03:38.674947Z",
+  "args": [
+    "--task_name",
+    "single_arm_left",
+    "--ckpt_dir",
+    "ckpt/single_arm_left_diffusion",
+    "--policy_class",
+    "Diffusion",
+    "--chunk_size",
+    "32",
+    "--batch_size",
+    "32",
+    "--num_steps",
+    "100000",
+    "--lr",
+    "1e-4",
+    "--seed",
+    "0",
+    "--validate_every",
+    "1000",
+    "--save_every",
+    "1000"
+  ],
+  "program": "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py",
+  "codePath": "imitate_episodes.py",
+  "codePathLocal": "imitate_episodes.py",
+  "git": {
+    "remote": "https://github.com/root0923/act_realman.git",
+    "commit": "e1314ae94bd95718b61dd7d8ad316e568f4368d0"
+  },
+  "email": "betty777sy@gmail.com",
+  "root": "/home/ysy/robotics/code/act_realman_oymotion-update",
+  "host": "ysy",
+  "executable": "/home/ysy/.miniconda/envs/realman/bin/python",
+  "writerId": "etzz4f66irme4dftxhs6j744og1fet4x"
+}

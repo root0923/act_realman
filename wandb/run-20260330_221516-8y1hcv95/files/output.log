@@ -1,0 +1,67 @@
+Found 41 hdf5 files
+
+
+Data from: ['/home/ysy/data/teleop_data/rotate_hdf5']
+- Train on [40] episodes
+- Test on [1] episodes
+
+
+Found 41 hdf5 files
+Norm stats from: ['/home/ysy/data/teleop_data/rotate_hdf5']
+Initializing transformations
+Initializing transformations
+Augment images: True, train_num_workers: 16, val_num_workers: 8
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+number of parameters: 6.717031e+07
+number of parameters: 89.56M
+  1%|▋                                                                                                                         | 563/100001 [03:44<11:00:52,  2.51it/s]
+validating
+Val loss:   1.10683
+val_l2_loss: 1.107 val_loss: 1.107
+Traceback (most recent call last):
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 709, in <module>
+    main(vars(parser.parse_args()))
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 207, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 643, in train_bc
+    data = next(train_dataloader)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 668, in repeater
+    for data in loader:
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1492, in _next_data
+    idx, data = self._get_data()
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1444, in _get_data
+    success, data = self._try_get_data()
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1285, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 709, in <module>
+    main(vars(parser.parse_args()))
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 207, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 643, in train_bc
+    data = next(train_dataloader)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 668, in repeater
+    for data in loader:
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1492, in _next_data
+    idx, data = self._get_data()
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1444, in _get_data
+    success, data = self._try_get_data()
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1285, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/ysy/.miniconda/envs/realman/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

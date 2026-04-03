@@ -1,0 +1,109 @@
+Found 42 hdf5 files
+
+
+Data from: ['/home/ysy/data/teleop_data/20260401_hdf5']
+- Train on [41] episodes
+- Test on [1] episodes
+
+
+Found 42 hdf5 files
+Norm stats from: ['/home/ysy/data/teleop_data/20260401_hdf5']
+Initializing transformations
+Initializing transformations
+Augment images: True, train_num_workers: 16, val_num_workers: 8
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/ysy/.miniconda/envs/realman/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+number of parameters: 6.717031e+07
+number of parameters: 89.56M
+ 10%|███████████▉                                                                                                           | 10000/100001 [1:03:01<7:14:27,  3.45it/s]
+validating
+Val loss:   1.04731
+val_l2_loss: 1.047 val_loss: 1.047
+validating
+Val loss:   0.02800
+val_l2_loss: 0.028 val_loss: 0.028
+validating
+Val loss:   0.02278
+val_l2_loss: 0.023 val_loss: 0.023
+validating
+Val loss:   0.02141
+val_l2_loss: 0.021 val_loss: 0.021
+validating
+Val loss:   0.02025
+val_l2_loss: 0.020 val_loss: 0.020
+validating
+Val loss:   0.01968
+val_l2_loss: 0.020 val_loss: 0.020
+validating
+Val loss:   0.01941
+val_l2_loss: 0.019 val_loss: 0.019
+validating
+Val loss:   0.02015
+val_l2_loss: 0.020 val_loss: 0.020
+validating
+Val loss:   0.02123
+val_l2_loss: 0.021 val_loss: 0.021
+validating
+Val loss:   0.02332
+val_l2_loss: 0.023 val_loss: 0.023
+validating
+Val loss:   0.02394
+val_l2_loss: 0.024 val_loss: 0.024
+validating
+Val loss:   0.02793
+val_l2_loss: 0.028 val_loss: 0.028
+validating
+Val loss:   0.02591
+val_l2_loss: 0.026 val_loss: 0.026
+validating
+Val loss:   0.02970
+val_l2_loss: 0.030 val_loss: 0.030
+validating
+Val loss:   0.02931
+val_l2_loss: 0.029 val_loss: 0.029
+validating
+Val loss:   0.03324
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.03200
+val_l2_loss: 0.032 val_loss: 0.032
+validating
+Val loss:   0.03338
+val_l2_loss: 0.033 val_loss: 0.033
+validating
+Val loss:   0.03419
+val_l2_loss: 0.034 val_loss: 0.034
+validating
+Val loss:   0.03381
+val_l2_loss: 0.034 val_loss: 0.034
+validating
+Val loss:   0.03790
+val_l2_loss: 0.038 val_loss: 0.038
+validating
+Val loss:   0.03903
+val_l2_loss: 0.039 val_loss: 0.039
+validating
+Val loss:   0.03893
+val_l2_loss: 0.039 val_loss: 0.039
+Traceback (most recent call last):
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 709, in <module>
+    main(vars(parser.parse_args()))
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 207, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 644, in train_bc
+    forward_dict = forward_pass(data, policy)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 572, in forward_pass
+    image_data, qpos_data, action_data, is_pad = image_data.cuda(), qpos_data.cuda(), action_data.cuda(), is_pad.cuda()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 709, in <module>
+    main(vars(parser.parse_args()))
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 207, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 644, in train_bc
+    forward_dict = forward_pass(data, policy)
+  File "/home/ysy/robotics/code/act_realman_oymotion-update/imitate_episodes.py", line 572, in forward_pass
+    image_data, qpos_data, action_data, is_pad = image_data.cuda(), qpos_data.cuda(), action_data.cuda(), is_pad.cuda()
+KeyboardInterrupt

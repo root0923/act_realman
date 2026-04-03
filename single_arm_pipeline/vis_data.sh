@@ -1,0 +1,1 @@
+python batch_visualize.py --data_dir /home/ysy/data/teleop_data/20260403_1_hdf5 --output_dir /home/ysy/data/teleop_data/20260403_1_mp4
